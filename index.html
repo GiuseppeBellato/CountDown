@@ -11,25 +11,40 @@
         <img src="/dnc.svg" alt="error" width="100">
         <h1 style="text-transform: uppercase">Count Down</h1>
     </header>
-    <div class="timer">
-        <div>
-            <h1 id="dia"> </h1>
-            <p>Dias</p>
+<!--Pergunta-->
+    <div id="pergunta">
+        <input type="text" id="respostaData"  name="respostaData" value="" placeholder="Insira a data aqui">
+        <button onclick="enviar()">Enviar</button>
+    </div> 
+<!--Count Down-->
+    <div>
+        <div id = "timer">
+            <div>
+                <h1 id="ano">00</h1>
+                <p>Anos</p>
+            </div>
+            <div>
+                <h1 id="dia">00</h1>
+                <p>Dias</p>
+            </div>
+            <div>
+                <h1 id="hora">00</h1>
+                <p>Horas</p>
+            </div>
+            <div>
+                <h1 id="minuto">00</h1>
+                <p>Minutos</p>
+            </div>
+            <div>
+                <h1 id="segundo">00</h1>
+                <p>Segundos</p>
+            </div>
         </div>
-        <div>
-            <h1 id="hora"> </h1>
-            <p>Horas</p>
+        <div id="botao" >
+            <button onclick="voltar()">Voltar</button>
         </div>
-        <div>
-            <h1 id="minuto"> </h1>
-            <p>Minutos</p>
-        </div>
-        <div>
-            <h1 id="segundo"> </h1>
-            <p>Segundos</p>
-        </div>
-
     </div>
+    
 
     <script src="index.js"></script>
 </body>
